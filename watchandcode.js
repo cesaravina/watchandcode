@@ -198,10 +198,22 @@ var todoList = {
 	}
 };
 
+// version 7
+// Requirements:
+// *There should be 'Display todos' & 'toggle all' buttons
+// *Clicking "Display todos" should run todoList.displayTodos()
+// *Clicking "Toggle all" should run todoList.toggleAll()
 
+var displayTodosButton = document.getElementById("displayTodosButton");
+var toggleAllButton = document.getElementById("toggleAllButton");
 
+displayTodosButton.addEventListener('click', function(){
+	todoList.displayTodos();
+});
 
-
+toggleAllButton.addEventListener('click', function(){
+	todoList.toggleAll();
+})
 
 
 
